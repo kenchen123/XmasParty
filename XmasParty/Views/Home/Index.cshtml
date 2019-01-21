@@ -1,0 +1,231 @@
+﻿<!--<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>-->
+<div class="row" style="display:flex">
+    <div class="col-lg-9" id="matchdiagram">
+        <!--1st stage-->
+        <div class="col-md-12 text-center is-hidden js-fade blink" id="final">
+
+            <h2>Winner</h2>
+            <img src="~/image/Crown.png" style="height:70px;width:70px" />
+            <img src="~/image/Z.gif" id="winner" style="height:70px;width:70px" />
+            <img src="~/image/Crown.png" style="height:70px;width:70px" />
+        </div>
+
+        <!--2nd stage-->
+        <div class="col-md-12 text-center  is-hidden js-fade" id="R3Game">
+            <h2 id="G6name">U</h2>
+        </div>
+
+        <!--3stage-->
+        <form id="R3" class="is-hidden js-fade">
+            <div class="col-md-5 text-center">
+                <input type="radio" name="R31winner" id="G61teaminput" value="C" onclick="WinnerStyle()" />
+                @*<h2 id="G61team">U</h2>*@
+                <img src="~/image/Z.gif" id="G61team" style="height:70px;width:70px" />
+            </div>
+            <div class="col-md-2  text-center">
+                <!--<a class="btn btn-default" onclick="SaveR3result()">Submit R3 result</a>-->
+                @*<input type="button" value="Submit R3 result" onclick="SaveR3result(this.form)" style="color:mediumblue" />*@
+                <input type="button" value="Submit R3 result" id="btnSaveR3result" style="color:mediumblue" /><br />
+            </div>
+            <div class="col-md-5 text-center">
+                <input type="radio" name="R31winner" id="G62teaminput" value="S" onclick="WinnerStyle()" />
+                @*<h2 id="G62team">U</h2>*@
+                <img src="~/image/Z.gif" id="G62team" style="height:70px;width:70px" />
+            </div>
+        </form>
+
+
+        <!--4stage-->
+        <div id="R2Game" class="is-hidden js-fade">
+            <div class="col-md-5 text-center">
+                <h2 id="G4name">U</h2>
+            </div>
+            <div class="col-md-2  text-center">
+                <h2> </h2>
+            </div>
+            <div class="col-md-5 text-center">
+                <h2 id="G5name">U</h2>
+            </div>
+        </div>
+
+        <!--5stage-->
+        <form id="R2" class="is-hidden js-fade">
+            <div class="col-md-2 text-center">
+                <input type="radio" name="R21winner" id="G41teaminput" value="A" onclick="WinnerStyle()" />
+                @*<h2 id="G41team">U</h2>*@
+                <img src="" id="G41team" style="height:70px;width:70px" />
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-2 text-center">
+                <input type="radio" name="R21winner" id="G42teaminput" value="C" onclick="WinnerStyle()" />
+                @*<h2 id="G42team">U</h2>*@
+                <img src="" id="G42team" style="height:70px;width:70px" />
+            </div>
+            <div class="col-md-2 text-center">
+                <!--<a class="btn btn-default" onclick="SaveR2result()">Submit R2 result</a>-->
+                @* <input type="button" value="Submit R2 result" onclick="SaveR2result(this.form)" style="color:mediumblue" /><br />*@
+                <input type="button" value="Submit R2 result" id="btnSaveR2result" style="color:mediumblue" /><br />
+            </div>
+            <div class="col-md-2 text-center">
+                <input type="radio" name="R22winner" id="G51teaminput" value="E" class="WinnerStyle" />
+                @*<h2 id="G51team">U</h2>*@
+                <img src="" id="G51team" style="height:70px;width:70px" />
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-2 text-center">
+                <input type="radio" name="R22winner" id="G52teaminput" value="S" class="WinnerStyle" />
+                @*<h2 id="G52team">S</h2>*@
+                <img src="~/image/S.gif" id="G52team" style="height:70px;width:70px" />
+            </div>
+        </form>
+
+
+        <!--6stage-->
+        <div id="R1Game" class="is-hidden js-fade">
+            <div class="col-md-2 text-center">
+                <h2 id="G1name">U</h2>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-2 text-center">
+                <h2 id="G2name">U</h2>
+            </div>
+            <div class="col-md-2 text-center"></div>
+            <div class="col-md-2 text-center">
+                <h2 id="G3name">U</h2>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-2 text-center ">
+            <h2 id="G0name" class="is-hidden js-fade">Seed</h2>
+        </div>
+
+
+        <!--7stage-->
+        <form>
+            <div id="R1" class="is-hidden js-fade">
+                <div id="R1-1">
+                    <div class="col-md-1 text-center">
+                        <input type="radio" name="R11winner" id="G11teaminput" value="A" />
+                        @*<h2 id="G11team">U</h2>*@
+
+                        <img src="~/image/Z.gif" id="G11team" style="height:70px;width:70px" />
+                        <p id="G11member1">member1</p>
+                        <p id="G11member2">member2</p>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <input type="radio" name="R11winner" id="G12teaminput" value="B" />
+                        @*<h2 id="G12team">U</h2>*@
+
+                        <img src="~/image/Z.gif" id="G12team" style="height:70px;width:70px" />
+                        <p id="G12member1">member1</p>
+                        <p id="G12member2">member2</p>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div id="R1-2">
+                    <div class="col-md-1 text-center">
+                        <input type="radio" name="R12winner" id="G21teaminput" value="C" class="WinnerStyle" />
+                        @*<h2 id="G21team">U</h2>*@
+
+                        <img src="~/image/Z.gif" id="G21team" style="height:70px;width:70px" />
+                        <p id="G21member1">member1</p>
+                        <p id="G21member2">member2</p>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <input type="radio" name="R12winner" id="G22teaminput" value="D" class="WinnerStyle" />
+                        @*<h2 id="G22team">U</h2>*@
+
+                        <img src="~/image/Z.gif" id="G22team" style="height:70px;width:70px" />
+                        <p id="G22member1">member1</p>
+                        <p id="G22member2">member2</p>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center" id="R1btn">
+                    <!--<input type="submit" value="Submit R1"><br />
+                    <a class="btn btn-default" onclick="SaveR1result()">Submit R1 result</a>-->
+                    @* <input type="button" value="Submit R1 result" onclick="SaveR1result(this.form)" style="color:mediumblue" /><br />*@
+                    <input type="button" value="Submit R1 result" id="btnSaveR1result" style="color:mediumblue" /><br />
+                </div>
+
+                <div id="R1-3">
+                    <div class="col-md-1 text-center">
+                        <input type="radio" name="R13winner" id="G31teaminput" value="E" class="WinnerStyle" />
+                        @*<h2 id="G31team">U</h2>*@
+
+                        <img src="~/image/Z.gif" id="G31team" style="height:70px;width:70px" />
+                        <p id="G31member1">member1</p>
+                        <p id="G31member2">member2</p>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <input type="radio" name="R13winner" id="G32teaminput" value="F" class="WinnerStyle" />
+                        @*<h2 id="G32team">U</h2>*@
+                        <img src="~/image/Z.gif" id="G32team" style="height:70px;width:70px" />
+                        <p id="G32member1">member1</p>
+                        <p id="G32member2">member2</p>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+
+                <div class="col-md-2 text-center is-hidden js-fade" id="R1S">
+                    <input type="radio" name="R14winner" id="R141teaminput" value="S" checked="checked" />
+                    @*<h2 id="R141team" style="color:red">S</h2>*@
+                    <img src="~/image/S.gif" id="R141team" style="height:70px;width:70px" />
+                    <p id="R141member1">member1</p>
+                    <p id="R141member2">member2</p>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+
+
+    <div class="col-lg-3" id="members">
+        <h2>Players</h2>
+        <form>
+            <input type="checkbox" name="employee" value="1" />Leo Chen<br />
+            <input type="checkbox" name="employee" value="2" />Jason Wu<br />
+            <input type="checkbox" name="employee" value="3" />Karen Chen<br />
+            <input type="checkbox" name="employee" value="4" />Esther Lin<br />
+            <input type="checkbox" name="employee" value="5" />Evan Lee<br />
+            <input type="checkbox" name="employee" value="6" />Jennifer Chen<br />
+            <input type="checkbox" name="employee" value="7" />Sandy Ho<br />
+            <input type="checkbox" name="employee" value="8" />Joy Lin<br />
+            <input type="checkbox" name="employee" value="9" />Weita Lu<br />
+            <input type="checkbox" name="employee" value="10" />Mabel Lin<br />
+            <input type="checkbox" name="employee" value="11" />Sharenna de la Cruz<br />
+            <input type="checkbox" name="employee" value="12" />Truman Huang<br />
+            <input type="checkbox" name="employee" value="13" />Yunming Liu<br />
+            <input type="checkbox" name="employee" value="14" />Ken Chen<br />
+            @*<input type="button" value="Mix!" onclick="RandomMember(this.form)" style="color:mediumblue" /><br />*@
+            <input type="button" value="Mix!" id="btnMix" style="color:mediumblue" /><br />
+            @*<input type="button" value="Match!" onclick="RandomMatch()" style="color:mediumblue" href="~/image/rolling.gif" data-fancybox /><br />*@
+            @*<input type="button" value="Match!" id="btnMatch" style="color:mediumblue" href="~/image/rolling.gif" data-fancybox /><br />*@
+            <input type="button" value="Match!" id="btnMatch" style="color:mediumblue" /><br />
+
+        </form>
+        <p>
+            Team List<br />
+            <a data-fancybox="images" data-caption="Team Squirtle" href="~/image/A.gif" title="TeamA"><img alt="" src="~/image/A.gif" style="height:70px;width:70px" /></a>Team Squirtle<br />
+            <a data-fancybox="images" data-caption="Team Charmander" href="~/image/B.gif" title="TeamB"><img alt="" src="~/image/B.gif" style="height:70px;width:70px" /></a>Team Charmander<br />
+            <a data-fancybox="images" data-caption="Team Pikachu" href="~/image/C.gif" title="TeamC"><img alt="" src="~/image/C.gif" style="height:70px;width:70px" /></a>Team Pikachu<br />
+            <a data-fancybox="images" data-caption="Team Lapras" href="~/image/D.gif" title="TeamC"><img alt="" src="~/image/D.gif" style="height:70px;width:70px" /></a>Team Lapras<br />
+            <a data-fancybox="images" data-caption="Team Eevee" href="~/image/E.gif" title="TeamC"><img alt="" src="~/image/E.gif" style="height:70px;width:70px" /></a>Team Eevee<br />
+            <a data-fancybox="images" data-caption="Team Mew" href="~/image/F.gif" title="TeamC"><img alt="" src="~/image/F.gif" style="height:70px;width:70px" /></a>Team Mew<br />
+            <a data-fancybox="images" data-caption="Team Bulbasaur" href="~/image/S.gif" title="TeamS"><img alt="" src="~/image/S.gif" style="height:70px;width:70px" /></a>Team Bulbasaur<br />
+        </p>
+
+        <audio controls>
+            <source src="~/music/3 Hours of Christmas Musics.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="matchse" src="~/music/match.mp3" controls preload="auto" autobuffer hidden="hidden"></audio>
+        <audio id="gamblegod" src="~/music/gamblegod.mp3" controls preload="auto" autobuffer hidden="hidden"></audio>
+
+
+    </div>
+</div>

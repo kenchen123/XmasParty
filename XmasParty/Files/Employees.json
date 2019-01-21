@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Leo Chen",
+    "team": "A",
+    "seed": false
+  },
+  {
+    "id": 2,
+    "name": "Jason Wu",
+    "team": "F",
+    "seed": false
+  },
+  {
+    "id": 3,
+    "name": "Karen Chen",
+    "team": "B",
+    "seed": false
+  },
+  {
+    "id": 4,
+    "name": "Esther Lin",
+    "team": "D",
+    "seed": false
+  },
+  {
+    "id": 5,
+    "name": "Evan Lee",
+    "team": "B",
+    "seed": false
+  },
+  {
+    "id": 6,
+    "name": "Jennifer Chen",
+    "team": "A",
+    "seed": false
+  },
+  {
+    "id": 7,
+    "name": "Sandy Ho",
+    "team": "F",
+    "seed": false
+  },
+  {
+    "id": 8,
+    "name": "Joy Lin",
+    "team": "E",
+    "seed": false
+  },
+  {
+    "id": 9,
+    "name": "Weita Lu",
+    "team": "D",
+    "seed": false
+  },
+  {
+    "id": 10,
+    "name": "Mabel Lin",
+    "team": "C",
+    "seed": false
+  },
+  {
+    "id": 11,
+    "name": "Sharenna de la Cruz",
+    "team": "E",
+    "seed": false
+  },
+  {
+    "id": 12,
+    "name": "Truman Huang",
+    "team": "S",
+    "seed": true
+  },
+  {
+    "id": 13,
+    "name": "Yunming Liu",
+    "team": "S",
+    "seed": true
+  },
+  {
+    "id": 14,
+    "name": "Ken Chen",
+    "team": "C",
+    "seed": false
+  }
+]

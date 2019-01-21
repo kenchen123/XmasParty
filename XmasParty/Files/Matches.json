@@ -1,0 +1,68 @@
+[
+  {
+    "roundmatch": "G1",
+    "team1": "A",
+    "team2": "B",
+    "gamename": "Foosball",
+    "winner": "B",
+    "team1member1": "Leo Chen",
+    "team1member2": "Jennifer Chen",
+    "team2member1": "Karen Chen",
+    "team2member2": "Evan Lee"
+  },
+  {
+    "roundmatch": "G2",
+    "team1": "F",
+    "team2": "C",
+    "gamename": "Switch",
+    "winner": "F",
+    "team1member1": "Jason Wu",
+    "team1member2": "Sandy Ho",
+    "team2member1": "Mabel Lin",
+    "team2member2": "Ken Chen"
+  },
+  {
+    "roundmatch": "G3",
+    "team1": "D",
+    "team2": "E",
+    "gamename": "Switch",
+    "winner": "D",
+    "team1member1": "Esther Lin",
+    "team1member2": "Weita Lu",
+    "team2member1": "Joy Lin",
+    "team2member2": "Sharenna de la Cruz"
+  },
+  {
+    "roundmatch": "G4",
+    "team1": "B",
+    "team2": "F",
+    "gamename": "Switch",
+    "winner": "F",
+    "team1member1": "Karen Chen",
+    "team1member2": "Evan Lee",
+    "team2member1": "Jason Wu",
+    "team2member2": "Sandy Ho"
+  },
+  {
+    "roundmatch": "G5",
+    "team1": "D",
+    "team2": "S",
+    "gamename": "Foosball",
+    "winner": "D",
+    "team1member1": "Esther Lin",
+    "team1member2": "Weita Lu",
+    "team2member1": "Truman Huang",
+    "team2member2": "Yunming Liu"
+  },
+  {
+    "roundmatch": "G6",
+    "team1": "F",
+    "team2": "D",
+    "gamename": "Switch",
+    "winner": "D",
+    "team1member1": "Jason Wu",
+    "team1member2": "Sandy Ho",
+    "team2member1": "Esther Lin",
+    "team2member2": "Weita Lu"
+  }
+]

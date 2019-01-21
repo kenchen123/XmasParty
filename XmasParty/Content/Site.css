@@ -1,0 +1,74 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.is-hidden {
+    visibility:hidden;
+}
+
+
+#matchdiagram {
+    color: azure;
+    background-color: darkred;
+    /*background-image: url('http://localhost/image/christmas_tree_by_strajk.jpg');*/
+    background-image: url(/image/christmas_tree_by_strajk.jpg);
+    background-size: auto;
+    background-position: center;
+}
+
+#members {
+    color: azure;
+    background-color: olive;
+    /*background-image: url('http://localhost/image/romantic-christmas-snow-ideas.jpg');*/
+    background-image: url(/image/romantic-christmas-snow-ideas.jpg);
+    background-size: auto;
+}
+
+.winner {
+    color:red;
+}
+
+.loser {
+    color: black;
+}
+
+.blink {
+    animation-duration: 1s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    81% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

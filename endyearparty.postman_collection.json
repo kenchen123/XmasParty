@@ -1,0 +1,510 @@
+{
+	"info": {
+		"_postman_id": "cfc426da-3d18-4b71-8f37-6155e5019d55",
+		"name": "endyearparty",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "scenario",
+			"item": [
+				{
+					"name": "RandomMember",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:65016/api/RandomMember",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "65016",
+							"path": [
+								"api",
+								"RandomMember"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Round1Team",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:65016/api/Round1Team",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "65016",
+							"path": [
+								"api",
+								"Round1Team"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Round1Result 1-1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:65016/api/Round1Result?winTeamName=beta&round1game=poker",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "65016",
+							"path": [
+								"api",
+								"Round1Result"
+							],
+							"query": [
+								{
+									"key": "winTeamName",
+									"value": "beta"
+								},
+								{
+									"key": "round1game",
+									"value": "poker"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Round1Result 1-2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:65016/api/Round1Result?round1game=poker&winTeamName=gamma",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "65016",
+							"path": [
+								"api",
+								"Round1Result"
+							],
+							"query": [
+								{
+									"key": "round1game",
+									"value": "poker"
+								},
+								{
+									"key": "winTeamName",
+									"value": "gamma"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Round1Result 1-3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:65016/api/Round1Result?round1game=poker&winTeamName=alpha",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "65016",
+							"path": [
+								"api",
+								"Round1Result"
+							],
+							"query": [
+								{
+									"key": "round1game",
+									"value": "poker"
+								},
+								{
+									"key": "winTeamName",
+									"value": "alpha"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Round2Team",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:65016/api/Round2Team",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "65016",
+							"path": [
+								"api",
+								"Round2Team"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Round2Result 2-1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:65016/api/Round2Result?round2game=shoot&winTeamName=delta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "65016",
+							"path": [
+								"api",
+								"Round2Result"
+							],
+							"query": [
+								{
+									"key": "round2game",
+									"value": "shoot"
+								},
+								{
+									"key": "winTeamName",
+									"value": "delta"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Round2Result 2-2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:65016/api/Round2Result?round2game=shoot&winTeamName=gamma",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "65016",
+							"path": [
+								"api",
+								"Round2Result"
+							],
+							"query": [
+								{
+									"key": "round2game",
+									"value": "shoot"
+								},
+								{
+									"key": "winTeamName",
+									"value": "gamma"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Round3Result",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:65016/api/Round3Result?round3game=Monopoly&winTeamName=gamma",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "65016",
+							"path": [
+								"api",
+								"Round3Result"
+							],
+							"query": [
+								{
+									"key": "round3game",
+									"value": "Monopoly"
+								},
+								{
+									"key": "winTeamName",
+									"value": "gamma"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "utility",
+			"item": [
+				{
+					"name": "Alive Teams",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:65016/api/Alive",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "65016",
+							"path": [
+								"api",
+								"Alive"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Teams",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:65016/api/Teams",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "65016",
+							"path": [
+								"api",
+								"Teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RandomGame",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:65016/api/RandomGame",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "65016",
+							"path": [
+								"api",
+								"RandomGame"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:65016/api/WinTeams?round=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:65016/api/WinTeams?round=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "65016",
+							"path": [
+								"api",
+								"WinTeams"
+							],
+							"query": [
+								{
+									"key": "round",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:65016/api/GetRound1Team",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"id\": 1,\r\n    \"teamname\": \"ALPHA\",\r\n    \"member1\": \"C\",\r\n    \"member2\": \"A\",\r\n    \"enemyTeamRound1\": \"\",\r\n    \"enemyTeamRound2\": \"\",\r\n    \"enemyTeamRound3\": \"\",\r\n    \"round1game\": null,\r\n    \"round2game\": null,\r\n    \"round3game\": null,\r\n    \"alive\": true,\r\n    \"round1win\": false,\r\n    \"round2win\": false,\r\n    \"round3win\": false\r\n  },\r\n  {\r\n    \"id\": 2,\r\n    \"teamname\": \"BETA\",\r\n    \"member1\": \"K\",\r\n    \"member2\": \"D\",\r\n    \"enemyTeamRound1\": \"\",\r\n    \"enemyTeamRound2\": \"\",\r\n    \"enemyTeamRound3\": \"\",\r\n    \"round1game\": null,\r\n    \"round2game\": null,\r\n    \"round3game\": null,\r\n    \"alive\": true,\r\n    \"round1win\": false,\r\n    \"round2win\": false,\r\n    \"round3win\": false\r\n  },\r\n  {\r\n    \"id\": 3,\r\n    \"teamname\": \"GAMMA\",\r\n    \"member1\": \"G\",\r\n    \"member2\": \"E\",\r\n    \"enemyTeamRound1\": \"\",\r\n    \"enemyTeamRound2\": \"\",\r\n    \"enemyTeamRound3\": \"\",\r\n    \"round1game\": null,\r\n    \"round2game\": null,\r\n    \"round3game\": null,\r\n    \"alive\": true,\r\n    \"round1win\": false,\r\n    \"round2win\": false,\r\n    \"round3win\": false\r\n  },\r\n  {\r\n    \"id\": 4,\r\n    \"teamname\": \"DELTA\",\r\n    \"member1\": \"I\",\r\n    \"member2\": \"B\",\r\n    \"enemyTeamRound1\": \"\",\r\n    \"enemyTeamRound2\": \"\",\r\n    \"enemyTeamRound3\": \"\",\r\n    \"round1game\": null,\r\n    \"round2game\": null,\r\n    \"round3game\": null,\r\n    \"alive\": true,\r\n    \"round1win\": false,\r\n    \"round2win\": false,\r\n    \"round3win\": false\r\n  },\r\n  {\r\n    \"id\": 5,\r\n    \"teamname\": \"SIGMA\",\r\n    \"member1\": \"J\",\r\n    \"member2\": \"L\",\r\n    \"enemyTeamRound1\": \"\",\r\n    \"enemyTeamRound2\": \"\",\r\n    \"enemyTeamRound3\": \"\",\r\n    \"round1game\": null,\r\n    \"round2game\": null,\r\n    \"round3game\": null,\r\n    \"alive\": true,\r\n    \"round1win\": false,\r\n    \"round2win\": false,\r\n    \"round3win\": false\r\n  },\r\n  {\r\n    \"id\": 6,\r\n    \"teamname\": \"OMEGA\",\r\n    \"member1\": \"M\",\r\n    \"member2\": \"F\",\r\n    \"enemyTeamRound1\": \"\",\r\n    \"enemyTeamRound2\": \"\",\r\n    \"enemyTeamRound3\": \"\",\r\n    \"round1game\": null,\r\n    \"round2game\": null,\r\n    \"round3game\": null,\r\n    \"alive\": true,\r\n    \"round1win\": false,\r\n    \"round2win\": false,\r\n    \"round3win\": false\r\n  },\r\n  {\r\n    \"id\": 7,\r\n    \"teamname\": \"THETA\",\r\n    \"member1\": \"N\",\r\n    \"member2\": \"H\",\r\n    \"enemyTeamRound1\": \"\",\r\n    \"enemyTeamRound2\": \"\",\r\n    \"enemyTeamRound3\": \"\",\r\n    \"round1game\": null,\r\n    \"round2game\": null,\r\n    \"round3game\": null,\r\n    \"alive\": true,\r\n    \"round1win\": false,\r\n    \"round2win\": false,\r\n    \"round3win\": false\r\n  }\r\n]"
+						},
+						"url": {
+							"raw": "http://localhost:65016/api/GetRound1Team",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "65016",
+							"path": [
+								"api",
+								"GetRound1Team"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:65016/api/GetRound2Team",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:65016/api/GetRound2Team",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "65016",
+							"path": [
+								"api",
+								"GetRound2Team"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:65016/api/GetRound3Team",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:65016/api/GetRound3Team",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "65016",
+							"path": [
+								"api",
+								"GetRound3Team"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:65016/api/ReadFile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"id\": 1,\r\n    \"teamname\": \"ALPHA\",\r\n    \"member1\": \"C\",\r\n    \"member2\": \"A\",\r\n    \"enemyTeamRound1\": \"\",\r\n    \"enemyTeamRound2\": \"\",\r\n    \"enemyTeamRound3\": \"\",\r\n    \"round1game\": null,\r\n    \"round2game\": null,\r\n    \"round3game\": null,\r\n    \"alive\": true,\r\n    \"round1win\": false,\r\n    \"round2win\": false,\r\n    \"round3win\": false\r\n  },\r\n  {\r\n    \"id\": 2,\r\n    \"teamname\": \"BETA\",\r\n    \"member1\": \"K\",\r\n    \"member2\": \"D\",\r\n    \"enemyTeamRound1\": \"\",\r\n    \"enemyTeamRound2\": \"\",\r\n    \"enemyTeamRound3\": \"\",\r\n    \"round1game\": null,\r\n    \"round2game\": null,\r\n    \"round3game\": null,\r\n    \"alive\": true,\r\n    \"round1win\": false,\r\n    \"round2win\": false,\r\n    \"round3win\": false\r\n  },\r\n  {\r\n    \"id\": 3,\r\n    \"teamname\": \"GAMMA\",\r\n    \"member1\": \"G\",\r\n    \"member2\": \"E\",\r\n    \"enemyTeamRound1\": \"\",\r\n    \"enemyTeamRound2\": \"\",\r\n    \"enemyTeamRound3\": \"\",\r\n    \"round1game\": null,\r\n    \"round2game\": null,\r\n    \"round3game\": null,\r\n    \"alive\": true,\r\n    \"round1win\": false,\r\n    \"round2win\": false,\r\n    \"round3win\": false\r\n  },\r\n  {\r\n    \"id\": 4,\r\n    \"teamname\": \"DELTA\",\r\n    \"member1\": \"I\",\r\n    \"member2\": \"B\",\r\n    \"enemyTeamRound1\": \"\",\r\n    \"enemyTeamRound2\": \"\",\r\n    \"enemyTeamRound3\": \"\",\r\n    \"round1game\": null,\r\n    \"round2game\": null,\r\n    \"round3game\": null,\r\n    \"alive\": true,\r\n    \"round1win\": false,\r\n    \"round2win\": false,\r\n    \"round3win\": false\r\n  },\r\n  {\r\n    \"id\": 5,\r\n    \"teamname\": \"SIGMA\",\r\n    \"member1\": \"J\",\r\n    \"member2\": \"L\",\r\n    \"enemyTeamRound1\": \"\",\r\n    \"enemyTeamRound2\": \"\",\r\n    \"enemyTeamRound3\": \"\",\r\n    \"round1game\": null,\r\n    \"round2game\": null,\r\n    \"round3game\": null,\r\n    \"alive\": true,\r\n    \"round1win\": false,\r\n    \"round2win\": false,\r\n    \"round3win\": false\r\n  },\r\n  {\r\n    \"id\": 6,\r\n    \"teamname\": \"OMEGA\",\r\n    \"member1\": \"M\",\r\n    \"member2\": \"F\",\r\n    \"enemyTeamRound1\": \"\",\r\n    \"enemyTeamRound2\": \"\",\r\n    \"enemyTeamRound3\": \"\",\r\n    \"round1game\": null,\r\n    \"round2game\": null,\r\n    \"round3game\": null,\r\n    \"alive\": true,\r\n    \"round1win\": false,\r\n    \"round2win\": false,\r\n    \"round3win\": false\r\n  },\r\n  {\r\n    \"id\": 7,\r\n    \"teamname\": \"THETA\",\r\n    \"member1\": \"N\",\r\n    \"member2\": \"H\",\r\n    \"enemyTeamRound1\": \"\",\r\n    \"enemyTeamRound2\": \"\",\r\n    \"enemyTeamRound3\": \"\",\r\n    \"round1game\": null,\r\n    \"round2game\": null,\r\n    \"round3game\": null,\r\n    \"alive\": true,\r\n    \"round1win\": false,\r\n    \"round2win\": false,\r\n    \"round3win\": false\r\n  }\r\n]"
+						},
+						"url": {
+							"raw": "http://localhost:65016/api/ReadFile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "65016",
+							"path": [
+								"api",
+								"ReadFile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
